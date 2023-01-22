@@ -1,34 +1,41 @@
-import React from 'react'
-import Section from 'src/components/Section'
 import Flex from 'src/ui/Flex'
-import { headerLinks } from 'src/modules/Layout/constants'
+import { headerIcons, headerLinks } from 'src/modules/Layout/constants'
 import Box from 'src/ui/Box'
 import StyledLink from 'src/components/StyledLink'
 import StyledImage from 'src/ui/Image'
+import Logo from 'src/static/Logo.png'
 
 const Header = () => {
   return (
-    <Section>
-      <Flex
-        p={3}
-        bg={'primary'}
-        sx={{
-          width: '100%'
-        }}
-      >
-        <Box>
-          <StyledImage src="src/static/Logo.png" />
-        </Box>
-        <Flex sx={{ gap: '15px' }}>
-          {headerLinks.map((e, i) => (
-            <StyledLink key={i} href={e.href}>
-              {e.name}
-            </StyledLink>
-          ))}
-        </Flex>
-        <Flex sx={{ gap: '5px' }}>{}</Flex>
+    <Flex
+      px={6}
+      py={2}
+      sx={{
+        justifyContent: 'space-between',
+        width: '100%'
+      }}
+      bg={'header'}
+    >
+      <Box>
+        <StyledImage src={Logo} sx={{ width: '60px' }} />
+      </Box>
+      <Flex sx={{ gap: '5em' }}>
+        {headerLinks.map((e, i) => (
+          <StyledLink key={i} href={e.href}>
+            {e.name}
+          </StyledLink>
+        ))}
       </Flex>
-    </Section>
+      <Flex sx={{ gap: '10px', alignItems: 'center', cursor: 'pointer' }}>
+        {headerIcons.map((e, i) => (
+          <StyledImage
+            key={i}
+            src={e}
+            sx={{ width: '40px', height: '40px', filter: 'invert(100%)' }}
+          />
+        ))}
+      </Flex>
+    </Flex>
   )
 }
 
