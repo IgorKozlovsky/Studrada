@@ -1,4 +1,6 @@
 import styled, { CSSObject } from 'styled-components'
+import { ReactNode } from 'react'
+
 import {
   color,
   space,
@@ -24,9 +26,17 @@ const styleProps = compose(
   size
 )
 
-const Box = styled.div(
+interface BoxProps {
+  children?: ReactNode
+}
+
+const BoxBase = ({ as: Component = 'div', ...props }) => (
+  <Component {...props} />
+)
+
+const Box = styled(BoxBase)(
   {
-    boxSizizng: 'border-box'
+    boxSizing: 'border-box'
   },
   styleProps,
   ({ sx }: CSSObject) => sx
