@@ -14,11 +14,20 @@ const StyledBox = styled.div`
   font-weight: bold;
   font-size: 24px;
   cursor: pointer;
+  line-height: 48px;
+  text-align: center;
 `
 
 const StyledLink: React.FC<LinkProps> = ({ href = '/', children }) => {
   return (
-    <NavLink to={href} style={{ textDecoration: 'none' }}>
+    <NavLink
+      to={href}
+      style={{
+        textDecoration: 'none',
+        display: 'flex',
+        alignItems: 'center'
+      }}
+    >
       <StyledBox>{children}</StyledBox>
     </NavLink>
   )
