@@ -15,8 +15,8 @@ const variants = {
   primary: {
     borderWidth: '1px',
     BorderStyle: 'solid',
-    borderColor: 'primary',
-    backgroundColor: 'primary',
+    borderColor: 'text',
+    backgroundColor: 'text',
     cursor: 'pointer',
     color: 'white',
     letterSpacing: 1,
@@ -24,7 +24,7 @@ const variants = {
     px: 3,
     fontSize: 2,
     ':hover': {
-      opacity: 0.8
+      opacity: 0.9
     }
   }
 }

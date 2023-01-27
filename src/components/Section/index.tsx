@@ -3,7 +3,7 @@ import Box from 'src/ui/Box'
 import Flex from 'src/ui/Flex'
 
 type SectionProps = {
-  children: ReactNode
+  children?: ReactNode
 }
 
 const Section: React.FC<SectionProps> = ({ children }) => {
@@ -15,7 +15,7 @@ const Section: React.FC<SectionProps> = ({ children }) => {
     >
       <Flex
         sx={{
-          maxWidth: '1300px',
+          maxWidth: '1200px',
           width: '100%'
         }}
       >

@@ -9,7 +9,7 @@ const Image = styled.img(
   ({ sx }: CSSObject) => sx
 )
 
-const StyledImage = ({ src = '', sx = {} }): JSX.Element => (
+const StyledImage = ({ src = 'ff.png', sx = {} }): JSX.Element => (
   <Image src={src} alt="image" sx={sx} />
 )
 export default StyledImage

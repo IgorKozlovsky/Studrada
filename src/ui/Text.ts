@@ -13,8 +13,14 @@ const styleText = compose(color, space, typography, layout, shadow)
 
 const variants = {
   header: {
+    fontSize: 3,
+    color: 'text',
+    fontWeight: 'bold'
+  },
+  title: {
     fontSize: 2,
-    color: 'text'
+    color: 'text',
+    fontWeight: 'bold'
   },
   subText: {
     fontSize: 0,
@@ -25,8 +31,9 @@ const variants = {
     color: 'text'
   },
   bannerText: {
-    fontSize: 3,
-    color: 'white'
+    fontSize: 4,
+    color: 'white',
+    fontWeight: 'bold'
   }
 }
 
