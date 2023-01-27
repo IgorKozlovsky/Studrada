@@ -1,10 +1,10 @@
 import { IArticle } from 'src/modules/Articles/types'
-import b1 from 'src/static/b1.png'
-import b2 from 'src/static/b2.png'
-import b3 from 'src/static/b3.png'
-import b4 from 'src/static/b4.png'
-import b5 from 'src/static/b5.png'
-import b6 from 'src/static/b6.png'
+import b1 from 'src/static/b1.jpg'
+import b2 from 'src/static/b2.jpg'
+import b3 from 'src/static/b3.jpg'
+import b4 from 'src/static/b4.jpg'
+import b5 from 'src/static/b5.jpg'
+import b6 from 'src/static/b6.jpg'
 
 export const articles: IArticle[] = [
   {

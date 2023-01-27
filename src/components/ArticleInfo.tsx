@@ -12,8 +12,8 @@ import pic4 from 'src/static/a4.png'
 const ArticleInfo = () => {
   return (
     <Section>
-      <Flex sx={{ justifyContent: 'space-evenly', paddingTop: '70px' }}>
-        <Flex sx={{ flexDirection: 'column', width: '40%' }}>
+      <Flex sx={{ justifyContent: 'space-between' }}>
+        <Flex sx={{ flexDirection: 'column', width: '50%' }}>
           <Text
             sx={{ fontSize: '36px', color: '#1A2A61', marginBottom: '15px' }}
           >

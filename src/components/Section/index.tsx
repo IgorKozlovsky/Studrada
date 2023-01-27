@@ -9,6 +9,7 @@ type SectionProps = {
 const Section: React.FC<SectionProps> = ({ children }) => {
   return (
     <Flex
+      my={[5, 5]}
       sx={{
         justifyContent: 'center'
       }}
