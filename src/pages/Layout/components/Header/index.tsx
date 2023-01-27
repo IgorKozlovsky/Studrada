@@ -1,5 +1,5 @@
 import Flex from 'src/ui/Flex'
-import { headerIcons, headerLinks } from 'src/modules/Layout/constants'
+import { headerIcons, headerLinks } from 'src/pages/Layout/constants'
 import Box from 'src/ui/Box'
 import StyledLink from 'src/components/StyledLink'
 import StyledImage from 'src/ui/Image'

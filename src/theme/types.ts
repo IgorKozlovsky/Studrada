@@ -13,6 +13,7 @@ export type TPalette = {
   white: string
 }
 export type TFontSizes = number[] & {
+  verySmall?: number
   small?: number
   medium?: number
   large?: number
