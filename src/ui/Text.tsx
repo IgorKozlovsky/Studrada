@@ -29,8 +29,9 @@ const variants = {
     color: 'white'
   }
 }
+const TextBase = ({ as: Component = 'p', ...props }) => <Component {...props} />
 
-const Text = styled('p')(
+const Text = styled(TextBase)(
   {
     padding: 0,
     margin: 0
