@@ -25,8 +25,9 @@ const variants = {
     color: 'text'
   },
   bannerText: {
-    fontSize: 3,
-    color: 'white'
+    fontSize: 5,
+    color: 'white',
+    fontWeight: 'bold'
   }
 }
 const TextBase = ({ as: Component = 'p', ...props }) => <Component {...props} />
