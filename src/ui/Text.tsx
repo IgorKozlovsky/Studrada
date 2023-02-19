@@ -31,7 +31,11 @@ const variants = {
     color: 'text'
   },
   bannerText: {
+<<<<<<< HEAD
     fontSize: 4,
+=======
+    fontSize: 5,
+>>>>>>> create-banner
     color: 'white',
     fontWeight: 'bold'
   }
