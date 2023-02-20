@@ -14,8 +14,7 @@ const Article = ({ article }: ArticleProps) => {
       sx={{
         flexDirection: 'column',
         alignItems: 'left',
-        gap: '10px',
-        width: '30%'
+        gap: '10px'
       }}
     >
       <StyledImage src={article.img} sx={{}} />

@@ -5,18 +5,33 @@ import Flex from 'src/ui/Flex'
 import Text from 'src/ui/Text'
 import Article from 'src/modules/Articles/components/Article'
 import { articles } from 'src/modules/Articles/constants'
+import Grid from 'src/ui/Grid'
 
 const Articles = () => {
   return (
     <Section>
-      <Flex sx={{ flexDirection: 'column', alignItems: 'center', gap: '48px' }}>
+      <Flex
+        sx={{
+          flexDirection: 'column',
+          textAlign: 'center',
+          gap: '48px',
+          width: '100%'
+        }}
+      >
         <Text variant={'header'}>Новини Студентської ради</Text>
-        <Flex sx={{ flexWrap: 'wrap', justifyContent: 'space-between' }}>
+        <Grid
+          sx={{
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+            gap: '40px'
+          }}
+        >
           {articles.map((e, i) => (
             <Article key={i} article={e} />
           ))}
-        </Flex>
-        <Button variant="primary">Більше</Button>
+        </Grid>
+        <Button variant="primary" sx={{ alignSelf: 'center' }}>
+          Більше
+        </Button>
       </Flex>
     </Section>
   )
