@@ -37,10 +37,10 @@ const ArticleInfo = () => {
             студентів;
           </Text>
         </Flex>
-        <StyledImage
+        {/* <StyledImage
           src={require('src/static/article-picture.png')}
           sx={{ width: 'auto' }}
-        />
+        /> */}
       </Flex>
     </Section>
   )
