@@ -18,6 +18,7 @@ export type TFontSizes = number[] & {
   medium?: number
   large?: number
   larger?: number
+  banner?: number
 }
 export type TBreakpoints = string[] & {
   sm?: string

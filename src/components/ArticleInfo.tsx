@@ -4,10 +4,6 @@ import Flex from 'src/ui/Flex'
 import Text from 'src/ui/Text'
 import Grid from 'src/ui/Grid'
 import StyledImage from 'src/ui/Image'
-import pic1 from 'src/static/a1.png'
-import pic2 from 'src/static/a2.png'
-import pic3 from 'src/static/a3.png'
-import pic4 from 'src/static/a4.png'
 
 const ArticleInfo = () => {
   return (
@@ -41,51 +37,10 @@ const ArticleInfo = () => {
             студентів;
           </Text>
         </Flex>
-        <Grid
-          sx={{
-            gap: '10px',
-            gridTemplateColumns: 'auto auto',
-            justifyContent: 'center'
-          }}
-        >
-          <StyledImage
-            src={pic1}
-            sx={{
-              width: '200px',
-              height: '150px'
-            }}
-          />
-          <StyledImage
-            src={pic2}
-            sx={{
-              width: '180px',
-              height: '200px',
-              justifySelf: 'end',
-              transform: 'translate(-20px, 0px)'
-            }}
-          />
-          <StyledImage
-            src={pic3}
-            sx={{
-              width: '180px',
-              height: '280px',
-              transform: 'translate(0px, -50px)'
-            }}
-          />
-          <StyledImage
-            src={pic4}
-            sx={{
-              width: '200px',
-              height: '230px',
-              alignSelf: 'end',
-              transform: 'translate(-20px, -50px)'
-            }}
-          />
-          {/* <StyledImage src={pic1} sx={{ width: '200px' }} />
-          <StyledImage src={pic2} sx={{ width: '200px' }} />
-          <StyledImage src={pic3} sx={{ width: '200px' }} />
-          <StyledImage src={pic4} sx={{ width: '200px' }} /> */}
-        </Grid>
+        {/* <StyledImage
+          src={require('src/static/article-picture.png')}
+          sx={{ width: 'auto' }}
+        /> */}
       </Flex>
     </Section>
   )
