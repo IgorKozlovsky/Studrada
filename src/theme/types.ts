@@ -11,6 +11,7 @@ export type TPalette = {
   text: string
   subText: string
   white: string
+  cardTitle: string
 }
 export type TFontSizes = number[] & {
   verySmall?: number
@@ -25,4 +26,5 @@ export type TBreakpoints = string[] & {
   md?: string
   lg?: string
   xl?: string
+  xxl?: string
 }

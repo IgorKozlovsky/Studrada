@@ -4,17 +4,42 @@ import Flex from 'src/ui/Flex'
 import Text from 'src/ui/Text'
 import Grid from 'src/ui/Grid'
 import StyledImage from 'src/ui/Image'
+import { breakpoints } from 'src/theme/primaryTheme/breakpoints'
 
 const ArticleInfo = () => {
   return (
     <Section>
-      <Flex sx={{ justifyContent: 'space-between' }}>
-        <Flex sx={{ flexDirection: 'column', width: '50%' }}>
+      <Flex
+        p={3}
+        sx={{
+          justifyContent: 'space-between',
+          gap: '25px',
+          [`@media (max-width: ${breakpoints.lg})`]: {
+            flexDirection: 'column'
+          }
+        }}
+      >
+        <Flex
+          sx={{
+            flexDirection: 'column',
+            width: '50%',
+            [`@media (max-width: ${breakpoints.lg})`]: {
+              width: 'auto'
+            }
+          }}
+        >
           <Text
-            sx={{ fontSize: '36px', color: '#1A2A61', marginBottom: '15px' }}
+            variant={'title'}
+            sx={{
+              [`@media (max-width: ${breakpoints.sm})`]: {
+                fontSize: '28px'
+              },
+              marginBottom: '15px',
+              textAlign: 'center'
+            }}
           >
-            Студентське самоврядування Національного університету «Одеська
-            юридична академія»
+            Студентське самоврядування Національного університету <br />
+            «Одеська юридична академія»
           </Text>
           <Text sx={{ fontSize: '18px', color: '#283159' }}>
             Студентська рада - це, перш за все, орган студентського
@@ -37,10 +62,20 @@ const ArticleInfo = () => {
             студентів;
           </Text>
         </Flex>
-        {/* <StyledImage
+        <StyledImage
           src={require('src/static/article-picture.png')}
-          sx={{ width: 'auto' }}
-        /> */}
+          sx={{
+            objectFit: 'contain',
+            width: '40%',
+            [`@media (max-width: ${breakpoints.lg})`]: {
+              margin: '0 auto',
+              width: '50%'
+            },
+            [`@media (max-width: ${breakpoints.sm})`]: {
+              width: '100%'
+            }
+          }}
+        />
       </Flex>
     </Section>
   )
