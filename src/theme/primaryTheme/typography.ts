@@ -1,6 +1,6 @@
 import { TFontSizes } from 'src/theme/types'
 
-export const fontSizes: TFontSizes = [16, 20, 26, 32, 48, 60]
+export const fontSizes: TFontSizes = [12, 14, 18, 24, 36, 48]
 
 fontSizes.verySmall = fontSizes[0]
 fontSizes.small = fontSizes[1]

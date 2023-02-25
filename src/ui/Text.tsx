@@ -13,13 +13,19 @@ const styleText = compose(color, space, typography, layout, shadow)
 
 const variants = {
   header: {
-    fontSize: 3,
+    fontSize: 4,
+    color: 'text',
+    fontWeight: 'bold',
+    textAlign: 'center'
+  },
+  title: {
+    fontSize: 4,
     color: 'text',
     fontWeight: 'bold'
   },
-  title: {
-    fontSize: 2,
-    color: 'text',
+  cardTitle: {
+    fontSize: 3,
+    color: 'cardTitle',
     fontWeight: 'bold'
   },
   subText: {

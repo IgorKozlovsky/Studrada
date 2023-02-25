@@ -2,8 +2,8 @@ import styled, { CSSObject } from 'styled-components'
 
 const Image = styled.img(
   {
-    objectFit: 'cover',
-    height: '100%',
+    objectFit: 'contain',
+    // height: '100%',
     width: '100%'
   },
   ({ sx }: CSSObject) => sx

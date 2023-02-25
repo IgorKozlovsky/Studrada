@@ -6,5 +6,6 @@ export const palette: TPalette = {
   bannerFrom: '#022A9C',
   text: '#1A2A61',
   subText: '#8B8D97',
-  white: '#FFFFFF'
+  white: '#FFFFFF',
+  cardTitle: '#4671d5'
 }
