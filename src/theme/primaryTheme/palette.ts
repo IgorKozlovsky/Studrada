@@ -7,5 +7,5 @@ export const palette: TPalette = {
   text: '#1A2A61',
   subText: '#8B8D97',
   white: '#FFFFFF',
-  cardTitle: '#4671d5'
+  cardTitle: '#1A2A61'
 }
