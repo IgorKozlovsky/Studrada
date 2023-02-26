@@ -16,7 +16,8 @@ const Banner = ({ text, children }: BannerProps) => {
           textAlign: 'center ',
           maxWidth: '420px',
           [`@media (max-width: ${breakpoints.sm})`]: {
-            fontSize: '32px'
+            fontSize: '32px',
+            maxWidth: '290px'
           }
         }}
       >

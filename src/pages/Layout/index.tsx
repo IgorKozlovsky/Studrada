@@ -1,3 +1,4 @@
+import { Routes, Route, Link } from 'react-router-dom'
 import primaryTheme from 'src/theme/primaryTheme'
 import { ThemeProvider } from 'styled-components'
 import Header from 'src/pages/Layout/components/Header'
@@ -9,8 +10,10 @@ const Layout = () => {
     <>
       <ThemeProvider theme={primaryTheme}>
         <Header />
-        {/* <Home /> */}
-        <Feedback />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/feedback" element={<Feedback />} />
+        </Routes>
       </ThemeProvider>
     </>
   )

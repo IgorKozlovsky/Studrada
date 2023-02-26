@@ -6,7 +6,7 @@ import Text from 'src/ui/Text'
 const Home = () => {
   return (
     <>
-      <Banner text={`Студенська рада НУ "ОЮА"`}></Banner>
+      <Banner text={`Студентська рада НУ "ОЮА"`}></Banner>
       <ArticleInfo />
       <Articles />
     </>
