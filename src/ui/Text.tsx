@@ -59,7 +59,8 @@ const TextBase = ({ as: Component = 'p', ...props }) => <Component {...props} />
 const Text = styled(TextBase)(
   {
     padding: 0,
-    margin: 0
+    margin: 0,
+    fontFamily: "'Barlow Semi Condensed', sans-serif"
   },
   styleText,
   variant({ variants }),

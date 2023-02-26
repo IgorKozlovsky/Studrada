@@ -14,7 +14,7 @@ const Banner = ({ text, children }: BannerProps) => {
         variant={'bannerText'}
         sx={{
           textAlign: 'center ',
-          maxWidth: '420px',
+          maxWidth: '430px',
           [`@media (max-width: ${breakpoints.sm})`]: {
             fontSize: '32px',
             maxWidth: '290px'
