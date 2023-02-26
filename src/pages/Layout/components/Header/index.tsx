@@ -20,6 +20,7 @@ const Header = () => {
     <Box
       bg={'header'}
       sx={{
+        zIndex: '10',
         height: showMenu ? '120%' : 'auto',
         width: '100%',
         [`@media (max-width: ${breakpoints.lg})`]: {

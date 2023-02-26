@@ -23,13 +23,21 @@ const variants = {
     color: 'text',
     fontWeight: 'bold'
   },
+  subtitle: {
+    fontSize: 2,
+    color: 'white'
+  },
   cardTitle: {
     fontSize: 3,
     color: 'cardTitle',
-    fontWeight: 'bold'
+    fontWeight: '500'
+  },
+  smallText: {
+    fontSize: 1,
+    color: 'white'
   },
   subText: {
-    fontSize: 0,
+    fontSize: 1,
     color: 'subText'
   },
   text: {
@@ -40,6 +48,10 @@ const variants = {
     fontSize: 5,
     color: 'white',
     fontWeight: 'bold'
+  },
+  footnote: {
+    fontSize: 0,
+    color: 'white'
   }
 }
 const TextBase = ({ as: Component = 'p', ...props }) => <Component {...props} />
