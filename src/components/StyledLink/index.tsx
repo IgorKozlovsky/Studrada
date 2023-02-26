@@ -1,12 +1,11 @@
 import { ReactNode } from 'react'
 import { NavLink } from 'react-router-dom'
 import Text from 'src/ui/Text'
-import Box from 'src/ui/Box'
-import Flex from 'src/ui/Flex'
 import styled, { CSSObject } from 'styled-components'
 
 type LinkProps = {
   href: string
+  fontSize?: string
   children: ReactNode
 }
 
@@ -19,7 +18,11 @@ const StyledBox = styled.div`
   text-align: center;
 `
 
-const StyledLink: React.FC<LinkProps> = ({ href = '/', children }) => {
+const StyledLink: React.FC<LinkProps> = ({
+  href = '/',
+  fontSize,
+  children
+}) => {
   return (
     <NavLink
       to={href}
@@ -30,7 +33,9 @@ const StyledLink: React.FC<LinkProps> = ({ href = '/', children }) => {
       }}
     >
       <StyledBox>
-        <Text variant={'subtitle'}>{children}</Text>
+        <Text variant={'subtitle'} sx={{ fontSize: fontSize }}>
+          {children}
+        </Text>
       </StyledBox>
     </NavLink>
   )

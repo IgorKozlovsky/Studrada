@@ -4,6 +4,7 @@ import { headerIcons, headerLinks } from 'src/pages/Layout/constants'
 import Box from 'src/ui/Box'
 import HeaderBurger from 'src/pages/Layout/components/Header/HeaderBurger'
 import HeaderBurgerButton from 'src/pages/Layout/components/Header/HeaderBurgerButton'
+import { NavLink } from 'react-router-dom'
 import StyledLink from 'src/components/StyledLink'
 import StyledImage from 'src/ui/Image'
 import Logo from 'src/static/Logo.png'
@@ -46,7 +47,9 @@ const Header = () => {
         bg={'header'}
       >
         <Box>
-          <StyledImage src={Logo} sx={{ width: '3.5rem' }} />
+          <NavLink to="/">
+            <StyledImage src={Logo} sx={{ width: '3.5rem' }} />
+          </NavLink>
         </Box>
         <Box
           sx={{

@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import styled from 'styled-components'
 import { space, SpaceProps, width } from 'styled-system'
 import Flex from 'src/ui/Flex'

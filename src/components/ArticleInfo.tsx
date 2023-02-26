@@ -2,7 +2,6 @@ import React from 'react'
 import Section from 'src/components/Section'
 import Flex from 'src/ui/Flex'
 import Text from 'src/ui/Text'
-import Grid from 'src/ui/Grid'
 import StyledImage from 'src/ui/Image'
 import { breakpoints } from 'src/theme/primaryTheme/breakpoints'
 

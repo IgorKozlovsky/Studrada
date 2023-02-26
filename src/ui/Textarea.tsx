@@ -15,6 +15,6 @@ const TextBase = ({ as: Component = 'textarea', ...props }) => (
   <Component {...props} />
 )
 
-const Textarea = styled(TextBase)(({ sx }: CSSObject) => sx)
+const Textarea = styled(TextBase)(({ sx }: CSSObject) => sx, styleText)
 
 export default Textarea

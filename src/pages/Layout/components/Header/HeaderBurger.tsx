@@ -34,7 +34,7 @@ const HeaderBurger = ({ showMenu, showMenuHandler }: HeaderBurgerProps) => {
         }}
       >
         {headerLinks.map((e, i) => (
-          <StyledLink key={i} href={e.href}>
+          <StyledLink key={i} href={e.href} fontSize={'28px'}>
             {e.name}
           </StyledLink>
         ))}{' '}

@@ -2,7 +2,6 @@ import Flex from 'src/ui/Flex'
 import Text from 'src/ui/Text'
 import StyledImage from 'src/ui/Image'
 import { headerIcons } from 'src/pages/Layout/constants'
-import { breakpoints } from 'src/theme/primaryTheme/breakpoints'
 
 const SideCard = () => {
   return (

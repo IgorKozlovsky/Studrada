@@ -1,9 +1,9 @@
-import SendButton from 'src/modules/Form/SendButton'
+import SendButton from 'src/modules/Form/components/SendButton'
 import Flex from 'src/ui/Flex'
 import Text from 'src/ui/Text'
 import Textarea from 'src/ui/Textarea'
-import InputWithLabel from 'src/modules/Form/InputField'
-import SideCard from 'src/modules/Form/SideCard'
+import InputWithLabel from 'src/modules/Form/components/InputField'
+import SideCard from 'src/modules/Form/components/SideCard'
 import { breakpoints } from 'src/theme/primaryTheme/breakpoints'
 
 const Form = () => {
