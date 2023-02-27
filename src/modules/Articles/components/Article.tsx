@@ -1,4 +1,3 @@
-import React from 'react'
 import { IArticle } from 'src/modules/Articles/types'
 import Flex from 'src/ui/Flex'
 import StyledImage from 'src/ui/Image'

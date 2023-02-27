@@ -1,5 +1,4 @@
 import { ReactNode } from 'react'
-import Box from 'src/ui/Box'
 import Flex from 'src/ui/Flex'
 
 type SectionProps = {

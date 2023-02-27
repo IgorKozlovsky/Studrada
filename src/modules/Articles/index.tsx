@@ -1,4 +1,3 @@
-import React from 'react'
 import Section from 'src/components/Section'
 import Button from 'src/ui/Button'
 import Flex from 'src/ui/Flex'

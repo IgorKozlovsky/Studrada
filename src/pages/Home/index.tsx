@@ -5,7 +5,7 @@ import ArticleInfo from 'src/components/ArticleInfo'
 const Home = () => {
   return (
     <>
-      <Banner />
+      <Banner text={`Студентська рада НУ "ОЮА"`}></Banner>
       <ArticleInfo />
       <Articles />
     </>
