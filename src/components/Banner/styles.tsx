@@ -8,6 +8,8 @@ const StyledBanner = styled(Flex)`
   background-position: center center;
   background-repeat: no-repeat;
   height: 85vh;
+  min-height: 500px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;

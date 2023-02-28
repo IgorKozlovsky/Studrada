@@ -1,8 +1,9 @@
 export const headerLinks = [
   { name: 'Головна', href: '/' },
-  { name: 'Абітурієнту', href: '/applicant' },
-  { name: 'Студенту', href: '/student' },
-  { name: 'StudShop', href: '/shop' }
+  { name: "Зворотний зв'язок", href: '/feedback' }
+  // { name: 'Абітурієнту', href: '/applicant' },
+  // { name: 'Студенту', href: '/student' },
+  // { name: 'StudShop', href: '/shop' }
 ]
 
 import Telegram from 'src/static/telegram.png'
