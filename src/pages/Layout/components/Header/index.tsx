@@ -46,7 +46,15 @@ const Header = () => {
         }}
         bg={'header'}
       >
-        <Flex sx={{ width: '150px', justifyContent: 'flex-end' }}>
+        <Flex
+          sx={{
+            width: '150px',
+            justifyContent: 'flex-end',
+            [`@media (max-width: ${breakpoints.sm})`]: {
+              width: '60px'
+            }
+          }}
+        >
           <NavLink to="/">
             <StyledImage src={Logo} sx={{ width: '3.5rem' }} />
           </NavLink>
