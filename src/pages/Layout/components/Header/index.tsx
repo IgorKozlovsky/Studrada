@@ -46,7 +46,7 @@ const Header = () => {
         }}
         bg={'header'}
       >
-        <Box>
+        <Box width={'150px'}>
           <NavLink to="/">
             <StyledImage src={Logo} sx={{ width: '3.5rem' }} />
           </NavLink>
