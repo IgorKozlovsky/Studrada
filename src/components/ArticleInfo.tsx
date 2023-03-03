@@ -1,4 +1,3 @@
-import React from 'react'
 import Section from 'src/components/Section'
 import Flex from 'src/ui/Flex'
 import Text from 'src/ui/Text'

@@ -25,18 +25,19 @@ const BannerSummary = () => {
       <StyledImage
         src={require('src/static/f1.png')}
         sx={{
-          maxWidth: '250px',
-          width: '25%',
+          // maxWidth: '250px',
+          maxWidth: '25%',
           zIndex: '2',
           [`@media (max-width: ${breakpoints.sm})`]: {
-            width: '35%'
+            // width: '35%',
+            maxWidth: '35%'
           }
         }}
       />
       <StyledImage
         src={require('src/static/white-space.png')}
         sx={{
-          maxWidth: '250px',
+          // maxWidth: '250px',
           width: '25%',
           position: 'absolute',
           translate: '5% 5%',

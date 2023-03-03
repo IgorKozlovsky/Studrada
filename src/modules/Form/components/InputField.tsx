@@ -29,7 +29,7 @@ const InputWithLabel: React.FC<Props> = ({ text, ...props }) => {
         flexDirection: 'column',
         width: '40%',
         [`@media (max-width: ${breakpoints.sm})`]: {
-          width: 'auto'
+          width: '100%'
         }
       }}
     >
