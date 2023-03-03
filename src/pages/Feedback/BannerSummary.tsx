@@ -17,7 +17,7 @@ const BannerSummary = () => {
         },
         [`@media (max-width: ${breakpoints.sm})`]: {
           flexDirection: 'column',
-          gap: '1rem',
+          gap: '2rem',
           marginTop: '25px'
         }
       }}
@@ -25,11 +25,9 @@ const BannerSummary = () => {
       <StyledImage
         src={require('src/static/f1.png')}
         sx={{
-          // maxWidth: '250px',
           maxWidth: '25%',
           zIndex: '2',
           [`@media (max-width: ${breakpoints.sm})`]: {
-            // width: '35%',
             maxWidth: '35%'
           }
         }}
@@ -37,10 +35,9 @@ const BannerSummary = () => {
       <StyledImage
         src={require('src/static/white-space.png')}
         sx={{
-          // maxWidth: '250px',
           width: '25%',
           position: 'absolute',
-          translate: '5% 5%',
+          translate: '8% 8%',
           [`@media (max-width: ${breakpoints.sm})`]: {
             width: '35%'
           }

@@ -18,7 +18,7 @@ const Form = () => {
         },
         maxWidth: '1100px',
         width: '90%',
-        translate: '0 -18vh',
+        translate: '0 -16vh',
         backgroundColor: 'white',
         margin: '0 auto',
         boxShadow: '5px 10px 18px #0000005a'
