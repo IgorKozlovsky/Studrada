@@ -9,6 +9,7 @@ import StyledLink from 'src/components/StyledLink'
 import StyledImage from 'src/ui/Image'
 import Logo from 'src/static/Logo.png'
 import { breakpoints } from 'src/theme/primaryTheme/breakpoints'
+import { width } from 'styled-system'
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false)
@@ -36,21 +37,28 @@ const Header = () => {
         sx={{
           [`@media (max-width: ${breakpoints.lg})`]: {
             padding: '8px 30px',
-            height: '4rem',
-            justifyContent: 'space-between'
+            height: '4rem'
           },
           alignItems: 'center',
-          justifyContent: 'space-around',
+          justifyContent: 'space-between',
           width: '100%',
           gap: '5em'
         }}
         bg={'header'}
       >
-        <Box>
+        <Flex
+          sx={{
+            width: '150px',
+            justifyContent: 'flex-end',
+            [`@media (max-width: ${breakpoints.sm})`]: {
+              width: '60px'
+            }
+          }}
+        >
           <NavLink to="/">
             <StyledImage src={Logo} sx={{ width: '3.5rem' }} />
           </NavLink>
-        </Box>
+        </Flex>
         <Box
           sx={{
             gap: '3rem',
